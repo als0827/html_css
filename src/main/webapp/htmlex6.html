@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼 태그</title>
+</head>
+<body>
+	<form action="#" method="get">
+		<div>
+			<label for="irum">이름</label>
+			<input type="text" name="irum" maxlength="20" size="50" id="irum" placeholder="이름을 입력해주세요">
+		</div>
+		<div>
+			<label for="uid" style="color:red;font-weight:bold;">아이디</label>
+			<input type="text" name="uid" maxlength="20" size="50" id="uid" placeholder="아이디를 입력해 주세요">
+		</div>
+		<div>
+			<label for="upw" style="color:red;font-weight:bold;">비밀번호</label>
+			<input type="password" name="upw" maxlength="20" size="50" id="uid" placeholder="비밀번호를 입력해 주세요">
+		</div>
+		<div>
+			<label for="uphoto" style="color:red;font-weight:bold;">파일</label>
+			<input type="file" name="uphoto">
+		</div>
+		<div>
+			성별
+			<input type="radio" name="gender" value="m" checked="checked">남
+			<input type="radio" name="gender" value="w">여
+		</div>
+		<div>
+			사용언어
+			<input type="checkbox" name="lang" value="c">c
+			<input type="checkbox" name="lang" value="java" checked="checked">java
+			<input type="checkbox" name="lang" value="sql">sql
+		</div>
+		<div>
+			자기소개
+			<textarea rows="5" cols="20">간단하게 입력하세요</textarea>
+			<textarea rows="5" cols="20" placeholder="간단하게 입력하세요"></textarea>
+		</div>
+		<div>
+			국적
+			<select>
+				<option selected="selected">한국</option>
+				<option>미국</option>
+				<option>중국</option>
+				<option>일본</option>
+			</select>
+		</div>
+		<div>
+			좋아하는 음식
+			<select multiple="multiple">
+				<option>좋아하는 음식을 선택해 주세요</option>
+				<option>와규</option>
+				<option>불고기</option>
+				<option>돌솥비빔밥</option>
+				<option>카츠동</option>
+			</select>
+		</div>
+		<input type="submit" value="">
+		<button>등록</button>
+	</form>
+</body>
+</html>
